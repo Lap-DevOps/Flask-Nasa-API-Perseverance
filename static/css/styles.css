@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Ваш пользовательский CSS в файле style.css */
+.custom-navbar {
+    height: 100px;
+
+    background-image: url('/static/images/cover2.jpg');
+    /* Замените путь на путь к вашему изображению */
+    background-size: cover;
+    /* Растягивает изображение, чтобы оно занимало всю площадь */
+    background-repeat: no-repeat;
+    /* Запрет повторения изображения */
+    color: aliceblue;
+}
+
+.main-content{
+    height: 675px;
+background-image: url('/static/images/rover.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+
+.text-body-secondary{
+    color: aliceblue;
+}
+
+
+/* styles.css */
+/* styles.css */
+.custom-card-img {
+    width: 100%;
+    height: 150px;
+    
+    object-fit: fill;
+   
+}
+
+
+h1{
+    color: antiquewhite;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh; /* Пример: задайте высоту контейнера */
+}
+
+
+.carousel-container {
+    max-height: 400px; /* Здесь можно задать желаемую максимальную высоту */
+    margin: 0 auto; /* Центрирование по горизонтали */
+  }

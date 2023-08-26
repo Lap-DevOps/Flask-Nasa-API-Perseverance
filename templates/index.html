@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<H1>Rover: Persewerance</H1>
+
+
+
+<div class="container">
+    <div class="row">
+        {% for item in photos %}
+        <div class="col-md-4 mb-4"> <!-- col-md-2 означает 2/12 ширины в средних размерах экрана -->
+
+            <div class="card" style="width: 18rem;">
+                <a href="{{ item.img_src }}" class="image-popup-no-margins">
+                <img src="{{ item.img_src }}" class="card-img-top custom-card-img" alt="Mars photo"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Sol: {{item.sol}}</h5>
+                    <p class="card-text">{{item.camera.full_name}}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Date: {{item.earth_date}}</li>
+                </ul>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="container mt-4">
+    {{ pagination.info }}
+    <ul class="pagination justify-content-center">
+        {{ pagination.links }}
+    </ul>
+</div>
+
+
+
+
+
+
+{% endblock content %}
