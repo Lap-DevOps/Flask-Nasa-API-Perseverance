@@ -11,7 +11,6 @@ def load_data():
     url = 'https://api.nasa.gov/mars-photos/api/v1/rovers/Perseverance/latest_photos?api_key=gXgqmDNzfhzkFhzYIRBzGzIqmbTuKItwLXq2cVcW'
     response = requests.get(url)
     if response.status_code == 200:
-
         g.data = response.json()
 
 
@@ -35,4 +34,4 @@ def index():
     return render_template("index.html")
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
